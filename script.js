@@ -1,18 +1,43 @@
 /* Desenvolva seu código abaixo */
 
-function playRockPaperScissor(player1, player2){
+function playRockPaperScissor (player1, player2){
 
-    const partida = player1 && player2
+    const Pedra = "Pedra"
+    const Papel = "Papel"
+    const Tesoura = "Tesoura"
 
-    if ((partida === "Pedra","Tesoura")||(partida === "Papel","Pedra")||(partida === "Tesoura","Papel")){
+    if (player1 == Pedra && player2 == Tesoura){
         return "Jogador 1 venceu!"
     }
 
-     else if ((partida === "Pedra","Pedra")||(partida === "Tesoura","Tesoura")||(partida === "Papel","Papel")){
+    else if (player1 == Tesoura && player2 == Papel){
+        return "Jogador 1 venceu!"
+    }
+
+    else if (player1 == Papel && player2 == Pedra){
+        return "Jogador 1 venceu!"
+    }
+
+    else if (player1 == Pedra && player2 == Pedra){
         return "Empate!"
     }
 
-     else if ((partida === "Tesoura","Pedra")||(partida === "Pedra","Papel")||(partida === "Papel","Tesoura")){
+    else if (player1 == Papel && player2 == Papel){
+        return "Empate!"
+    }
+
+    else if (player1 == Tesoura && player2 == Tesoura){
+        return "Empate!"
+    }
+
+    else if (player1 == Pedra && player2 == Papel){
         return "Jogador 2 venceu!"
     }
+
+    else if (player1 == Papel && player2 == Tesoura){
+        return "Jogador 2 venceu!"
+    }
+
+    else (player1 == Tesoura && player2 == Pedra)
+        return "Jogador 2 venceu!"
 }
